@@ -1,0 +1,17 @@
+server:
+  port: 5534
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/frame?useUnicode=true&useSSL=true
+    username: root
+    password: 1234
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  thymeleaf:
+      cache: false
+
+mybatis:
+        #别名扫描包
+  typeAliasesPackage: wang.doug.frame.model
+        #加载mybatis映射文件
+  mapperLocations: classpath:mapper/*.xml
